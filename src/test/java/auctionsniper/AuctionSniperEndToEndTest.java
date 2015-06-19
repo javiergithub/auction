@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple Apps.
  */
 public class AuctionSniperEndToEndTest {
 	private final FakeAuctionServer auction = new FakeAuctionServer("item-54321");
