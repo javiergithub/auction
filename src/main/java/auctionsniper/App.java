@@ -1,4 +1,4 @@
-package org.javier.test.auction;
+package auctionsniper;
 
 /**
  * Hello world!

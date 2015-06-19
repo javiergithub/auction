@@ -1,4 +1,4 @@
-package org.javier.test.auction;
+package auctionsniper;
 
 public class ApplicationRunner {
 	public static final String SNIPER_ID = "sniper";

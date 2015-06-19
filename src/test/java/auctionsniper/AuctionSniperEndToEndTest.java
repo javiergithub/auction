@@ -1,4 +1,4 @@
-package org.javier.test.auction;
+package auctionsniper;
 
 import org.junit.After;
 import org.junit.Test;

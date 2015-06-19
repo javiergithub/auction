@@ -1,4 +1,4 @@
-package org.javier.test.auction;
+package auctionsniper;
 
 import com.objogate.wl.swing.AWTEventQueueProber;
 import com.objogate.wl.swing.driver.JFrameDriver;
