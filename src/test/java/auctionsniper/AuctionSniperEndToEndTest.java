@@ -7,8 +7,7 @@ import org.junit.Test;
  * Unit test for simple App.
  */
 public class AuctionSniperEndToEndTest {
-	private final FakeAuctionServer auction = new FakeAuctionServer(
-			"item-54321");
+	private final FakeAuctionServer auction = new FakeAuctionServer("item-54321");
 	private final ApplicationRunner application = new ApplicationRunner();
 
 	@Test
