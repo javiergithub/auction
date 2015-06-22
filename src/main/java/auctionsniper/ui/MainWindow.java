@@ -6,10 +6,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.border.LineBorder;
 
+import auctionsniper.Main;
+
 public class MainWindow extends JFrame {
 	private static final long serialVersionUID = 1L;
-	public static final String MAIN_WINDOW_NAME = null;
-	public static final String SNIPER_STATUS_NAME = "sniper status";
+	public static final String MAIN_WINDOW_NAME = "Auction Sniper";
 	private static final String STATUS_JOINING = "Joining";
 	private final JLabel sniperStatus = createLabel(STATUS_JOINING);
 	
@@ -24,7 +25,7 @@ public class MainWindow extends JFrame {
 
 	private static JLabel createLabel(String initialText) {
 		JLabel result = new JLabel(initialText);
-		result.setName(SNIPER_STATUS_NAME);
+		result.setName(Main.SNIPER_STATUS_NAME);
 		result.setBorder(new LineBorder(Color.BLACK));
 		return result;
 	}
