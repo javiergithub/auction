@@ -57,7 +57,6 @@ public class Main {
 				});
 		this.notToBeGCd = chat;
 		chat.sendMessage(new Message());
-		int i=0;
 	}
 
 	private static String auctionId(String itemId, XMPPConnection connection) {
