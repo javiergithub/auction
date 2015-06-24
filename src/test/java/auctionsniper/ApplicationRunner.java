@@ -1,12 +1,17 @@
 package auctionsniper;
 
+
 public class ApplicationRunner {
+	public static final String AUCTION_RESOURCE = "Auction";
 	public static final String SNIPER_ID = "sniper";
 	public static final String SNIPER_PASSWORD = "sniper";
 	protected static final String XMPP_HOSTNAME = "localhost";
 	private static final String STATUS_JOINING = "Joining";
 	private static final String STATUS_LOST = "Lost";
+	private static final String STATUS_BIDDING = "Bidding";
 	private AuctionSniperDriver driver;
+	public static final String SNIPER_XMPP_ID = String.format("%s@%s/%s", ApplicationRunner.SNIPER_ID,
+			ApplicationRunner.XMPP_HOSTNAME, ApplicationRunner.AUCTION_RESOURCE);
 
 	public void startBiddingIn(final FakeAuctionServer auction) {
 		Thread thread = new Thread("Test Application") {
@@ -30,6 +35,10 @@ public class ApplicationRunner {
 		driver.showsSniperStatus(STATUS_LOST);
 	}
 
+	public void hasShownSniperIsBidding() {
+		driver.showsSniperStatus(STATUS_BIDDING);
+	}
+	
 	public void stop() {
 		if (driver != null) {
 			driver.dispose();
